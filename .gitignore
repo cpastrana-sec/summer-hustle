@@ -1,0 +1,14 @@
+# secrets & local state — never commit
+.dev.vars
+.env*
+poller/config.json
+poller/seen.json
+poller/poller.log
+*.tmp
+# tooling
+node_modules/
+.wrangler/
+.DS_Store
+Thumbs.db
+~$*
+__pycache__/

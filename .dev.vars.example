@@ -1,0 +1,4 @@
+# Copy to .dev.vars for local `wrangler pages dev` testing. In production these are set as
+# ENCRYPTED environment variables in Cloudflare Pages → Settings → Variables and Secrets.
+ADZUNA_APP_ID=your_public_site_app_id
+ADZUNA_APP_KEY=your_public_site_app_key

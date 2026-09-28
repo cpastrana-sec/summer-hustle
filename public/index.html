@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SUMMER HUSTLE · Winter Park Job Board (32792)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Hanken+Grotesk:wght@400;500;600;700;800&family=Spline+Sans+Mono:wght@500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="topbar">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span>SUMMER&nbsp;HUSTLE</div>
+    <nav>
+      <a href="#board">Jobs</a>
+      <a href="#rules">Your Rights</a>
+      <a href="#plan">Game Plan</a>
+      <a href="#more">Search More</a>
+    </nav>
+  </div>
+</div>
+<header class="hero">
+  <div class="sun"></div>
+  <svg class="hero-worker" viewBox="0 0 240 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <g stroke="#16140F" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+      <ellipse cx="120" cy="289" rx="72" ry="10" fill="rgba(22,20,15,.12)" stroke="none"/>
+      <rect x="92" y="208" width="24" height="64" rx="7" fill="#3a352b"/>
+      <rect x="124" y="208" width="24" height="64" rx="7" fill="#3a352b"/>
+      <rect x="82" y="266" width="40" height="19" rx="6" fill="#16140F"/>
+      <rect x="118" y="266" width="40" height="19" rx="6" fill="#16140F"/>
+      <path d="M76 134 q-24 8 -28 42 q-2 16 6 30" fill="none" stroke-width="15"/>
+      <circle cx="58" cy="214" r="11" fill="#F2C9A0"/>
+      <path d="M164 134 q28 -2 42 -36 q7 -16 0 -30" fill="none" stroke-width="15"/>
+      <path d="M76 130 h88 q12 0 12 13 v58 q0 13 -13 13 H77 q-13 0 -13 -13 v-58 q0 -13 12 -13 Z" fill="#FF5A1F"/>
+      <rect x="64" y="168" width="112" height="13" fill="#FFC93C" stroke-width="3"/>
+      <line x1="120" y1="130" x2="120" y2="214" stroke-width="3"/>
+      <circle cx="200" cy="70" r="12" fill="#F2C9A0"/>
+      <g transform="rotate(-30 200 70)">
+        <rect x="192" y="14" width="16" height="62" rx="6" fill="#cfd2d6"/>
+        <path d="M186 12 q14 -14 28 0 l-7 9 -14 0 Z" fill="#cfd2d6"/>
+        <circle cx="200" cy="20" r="4" fill="#16140F" stroke="none"/>
+      </g>
+      <rect x="105" y="110" width="30" height="24" fill="#F2C9A0"/>
+      <circle cx="120" cy="90" r="35" fill="#F2C9A0"/>
+      <circle cx="107" cy="90" r="3.6" fill="#16140F" stroke="none"/>
+      <circle cx="133" cy="90" r="3.6" fill="#16140F" stroke="none"/>
+      <path d="M106 103 q14 13 28 0" fill="none" stroke-width="4"/>
+      <path d="M82 66 q38 -46 76 0 Z" fill="#FFC93C"/>
+      <rect x="74" y="60" width="92" height="13" rx="6" fill="#FFC93C"/>
+      <rect x="116" y="30" width="8" height="32" rx="4" fill="#FFC93C" stroke-width="3"/>
+    </g>
+  </svg>
+  <div class="wrap">
+    <span class="kicker"><span class="pin"></span> <span id="locKicker">Winter Park, FL · ZIP 32792 · 5–10 mi radius</span></span>
+    <h1 class="title">Get <span class="pop">Paid</span><br><span class="out">This</span> Summer.</h1>
+    <p class="lead">A focused job board for <b>ready-to-work teens 16+</b> chasing <b>20–40 hours a week</b> close to home. Real local employers. Real apply links. No fluff. <b>Drop in your ZIP</b> to search your own area.</p>
+    <div class="hero-cta">
+      <a href="#board" class="btn primary">See the jobs <span class="arr">↓</span></a>
+      <a href="#rules" class="btn">Know your summer rights</a>
+    </div>
+    <form class="zipbar" id="zipForm">
+      <span class="ziplabel">Your ZIP</span>
+      <input class="zipinput" id="zipInput" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="32792" aria-label="Your 5-digit ZIP code" />
+      <button class="btn dark" type="submit">Search my area</button>
+      <span class="ziphint" id="zipHint"></span>
+    </form>
+  </div>
+</header>
+<div class="stats">
+  <div class="wrap">
+    <div class="grid">
+      <div class="stat"><div class="n">16+</div><div class="l">Minimum age for most summer roles</div></div>
+      <div class="stat"><div class="n orange">$14<span class="u1">/hr</span></div><div class="l">FL minimum wage floor (summer '26)</div></div>
+      <div class="stat"><div class="n green">20–40</div><div class="l">Target hours per week</div></div>
+      <div class="stat"><div class="n">5–10<span class="u1">mi</span></div><div class="l">Radius from <span id="statZip">32792</span></div></div>
+    </div>
+  </div>
+</div>
+<div class="board" id="board">
+  <div class="filters">
+    <div class="wrap">
+      <div class="filter-row">
+        <span class="flabel">Filter</span>
+        <select class="fsel" id="catSel" aria-label="Filter by category">
+          <option value="all">All jobs</option>
+          <option value="food">Food &amp; Drink</option>
+          <option value="grocery">Grocery</option>
+          <option value="retail">Retail</option>
+          <option value="rec">Recreation</option>
+          <option value="camp">Camps &amp; Kids</option>
+          <option value="out">Outdoors &amp; Labor</option>
+        </select>
+        <select class="fsel" id="sortSel" aria-label="Sort jobs">
+          <option value="default">Best fit</option>
+          <option value="pay">Top pay</option>
+          <option value="hours">Most hours</option>
+        </select>
+        <label class="ftoggle"><input type="checkbox" id="hoursToggle"> 20–40 hr/wk</label>
+        <span class="filter-spacer"></span>
+        <span class="count" id="count"></span>
+        <span class="live-status" id="liveStatus"></span>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="live-note" id="liveNote">Heads-up: the <b>Live</b> cards below are the Winter Park feed. For openings in <b>your</b> area, use your retargeted <a href="#more">search links</a> ↓ — they now point at your ZIP.</div>
+    <div class="cards" id="cards"></div>
+    <p class="u2">
+      Pay ranges are typical local estimates for entry-level teens — your offer may differ. Always confirm wage and schedule with the employer.
+    </p>
+  </div>
+</div>
+<section class="rules" id="rules">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="tag-num">01 / KNOW THE RULES</span><h2>Your <em>Summer</em> Rights, At 17</h2></div>
+      <p>Florida treats summer differently than the school year. Here's what actually applies June through Labor Day.</p>
+    </div>
+    <div class="rules-grid">
+      <div class="rule reveal"><div class="ic">⏰</div><h4>No Summer Hour Cap</h4><p>When school is out (<b>June 1 – Labor Day</b>), Florida lifts the 30-hour weekly limit that applies during the school year. A 17-year-old can work <b>full hours</b> — so your 20–40/week goal is no problem.</p></div>
+      <div class="rule reveal"><div class="ic">💵</div><h4>$14 / Hour Floor</h4><p>Florida's minimum wage is <b>$14.00/hr</b> through Sept 29, 2026. There's <b>no lower "youth" rate</b> — you earn at least full minimum wage. Tipped roles can use a $10.98 cash wage, but tips must bring you to $14.</p></div>
+      <div class="rule reveal"><div class="ic">🚫</div><h4>Off-Limits Work</h4><p>Some jobs are restricted for under-18s — operating dangerous power equipment, roofing, most driving for the job, and serving alcohol. Plenty of great roles remain wide open.</p></div>
+      <div class="rule reveal"><div class="ic">📄</div><h4>No Work Permit Needed</h4><p>Florida doesn't require a work permit for 16–17-year-olds. You'll just need <b>ID</b> and a way to prove you can work (like a birth certificate + Social Security card for the I-9).</p></div>
+      <div class="rule reveal"><div class="ic">🍔</div><h4>Breaks</h4><p>Under-18 workers in Florida must get a <b>30-minute break</b> for every 4 hours of continuous work. Build it into your shift expectations.</p></div>
+      <div class="rule reveal"><div class="ic">🏫</div><h4>Heads-Up for Fall</h4><p>Once school restarts, the school-year limits return (no work during school hours, and weekly caps unless a parent/school waiver is filed). Enjoy the open summer while it's here.</p></div>
+    </div>
+    <div class="summer-note reveal"><div class="big">☀️</div><p><b>Bottom line:</b> Summer is the easiest legal window of the year for 16- and 17-year-olds to stack hours. Aim to lock in a role <b>before mid-June</b> while seasonal openings are at their peak.</p></div>
+  </div>
+</section>
+<section id="plan">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="tag-num">02 / THE PLAY</span><h2>5-Day <em>Hiring</em> Game Plan</h2></div>
+      <p>Most summer hires happen fast. Move like you mean it and you can be working within a week or two.</p>
+    </div>
+    <div class="plan-grid">
+      <div class="step reveal"><div class="num">01</div><h4>Build a one-page resume</h4><p>No experience? Lead with reliability, school activities, sports, volunteering, and the fact you're available all summer. Honest and clean beats fancy.</p></div>
+      <div class="step reveal"><div class="num">02</div><h4>Apply to 10+ at once</h4><p>Hit the cards above and the <a href="#more">search links</a> below. Apply broadly — food, grocery, retail, and rec all hire teens fast in summer.</p></div>
+      <div class="step reveal"><div class="num">03</div><h4>Show up in person</h4><p>For local restaurants and shops, walk in mid-afternoon (2–4pm, slow hours), dress neat, ask for the manager, and hand over your resume. It still works.</p></div>
+      <div class="step reveal"><div class="num">04</div><h4>Nail the basics in the interview</h4><p>Be early, make eye contact, say you can work weekends and 20–40 hours, and that you're dependable. Bring your ID + Social Security card so you can start fast.</p></div>
+      <div class="step reveal"><div class="num">05</div><h4>Follow up</h4><p>No reply in 3–4 days? Call or stop back politely. Persistence reads as motivation — exactly what summer managers want.</p></div>
+      <div class="step reveal u3"><div class="num u4">★</div><h4 class="u5">Pro move</h4><p class="u6">Open availability + "I can start this week" is your superpower against other teen applicants. Lead with it every time.</p></div>
+    </div>
+  </div>
+</section>
+<section class="more" id="more">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="tag-num u7">03 / GO WIDER</span><h2>Search <em>More</em> Openings</h2></div>
+      <p class="u8">These searches are pre-set to a ~10-mile radius around <span id="moreZip">ZIP 32792</span>. Change your ZIP up top and these all retarget to your area.</p>
+    </div>
+    <div class="links">
+      <a class="link-btn" target="_blank" rel="noopener noreferrer" data-tpl="https://www.indeed.com/jobs?q=16+year+old&l={zip}&radius=10" href="https://www.indeed.com/jobs?q=16+year+old&l=32792&radius=10"><span class="t">Indeed</span><span class="s">"16 year old" · 10 mi</span></a>
+      <a class="link-btn" target="_blank" rel="noopener noreferrer" data-tpl="https://www.indeed.com/jobs?q=teen+summer&l={zip}&radius=10" href="https://www.indeed.com/jobs?q=teen+summer&l=32792&radius=10"><span class="t">Indeed</span><span class="s">"teen summer" · 10 mi</span></a>
+      <a class="link-btn" target="_blank" rel="noopener noreferrer" data-tpl="https://www.simplyhired.com/search?q=teen&l={zip}" href="https://www.simplyhired.com/search?q=teen&l=32792"><span class="t">SimplyHired</span><span class="s">teen jobs near you</span></a>
+      <a class="link-btn" target="_blank" rel="noopener noreferrer" data-tpl="https://www.glassdoor.com/Job/jobs.htm?sc.keyword=teen&locKeyword={zip}" href="https://www.glassdoor.com/Job/jobs.htm?sc.keyword=teen&locKeyword=32792"><span class="t">Glassdoor</span><span class="s">teen jobs + ratings</span></a>
+      <a class="link-btn" target="_blank" rel="noopener noreferrer" data-tpl="https://www.snagajob.com/search?q=&w={zip}" href="https://www.snagajob.com/search?q=&w=32792"><span class="t">Snagajob</span><span class="s">hourly + shift work</span></a>
+      <a class="link-btn" target="_blank" rel="noopener noreferrer" href="https://www.careeronestop.org/JobSearch/job-search.aspx"><span class="t">CareerOneStop</span><span class="s">US Dept. of Labor · nationwide</span></a>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-flex">
+      <div>
+        <div class="brand"><span class="dot u9"></span>SUMMER HUSTLE</div>
+        <p class="mono u10"><span id="footLoc">Winter Park, FL · ZIP 32792</span> · Built June 2026</p>
+      </div>
+      <p class="disclaimer">
+        <b>Heads up:</b> This is a personal job-search starter page, not an official employer site or job application. Listed companies are examples of local employers that commonly hire teens — openings, ages required, pay, and hours change constantly, so confirm everything directly with the employer. <b>Wage &amp; labor facts</b> reflect Florida law as of June 2026 ($14.00/hr minimum wage; summer hour rules for 16–17-year-olds). For official rules, check Florida's Child Labor program (myfloridalicense.com) and the U.S. Dept. of Labor. Not legal advice.
+      </p>
+    </div>
+  </div>
+</footer>
+<script src="app.js" defer></script>
+</body>
+</html>

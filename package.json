@@ -1,0 +1,1 @@
+{ "name": "summer-hustle", "private": true, "type": "module", "scripts": { "test": "node tests/run.mjs" } }

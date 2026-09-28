@@ -1,0 +1,17 @@
+{
+ "adzuna_app_id": "NAS_POLLER_APP_ID",
+ "adzuna_app_key": "NAS_POLLER_APP_KEY",
+ "adzuna_country": "us",
+ "where": "Winter Park, FL",
+ "distance_km": 16,
+ "results_per_page": 50,
+ "max_days_old": 7,
+ "web_out": "/volume1/web/jobsite/jobs.json",
+ "site_url": "https://summer-hustle-fl.pages.dev",
+ "smtp_host": "smtp.gmail.com",
+ "smtp_port": 587,
+ "smtp_user": "alerts@example.com",
+ "smtp_pass": "APP_PASSWORD",
+ "recipient_email": "you@example.com",
+ "sms_gateway": "5555555555@carrier-gateway.example"
+}
