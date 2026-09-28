@@ -1,6 +1,6 @@
 # Summer Hustle — teen summer job board
 
-Live: https://summer-hustle-fl.pages.dev
+Live: https://summer-hustle-teens.pages.dev
 
 A public job board that helps teens 16+ find summer work near their ZIP code. Built and operated
 on a home lab (Synology NAS) plus Cloudflare Pages, with a security review and hardening pass
